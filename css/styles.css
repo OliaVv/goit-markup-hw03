@@ -17,11 +17,11 @@ body {
   letter-spacing: 0.03em;
 }
 .conteiner {
-     width: 1230px;
+     width: 1200px;
     padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
-    outline: 3px solid red;
+    /* outline: 3px solid red; */
 }
 .list {
     list-style: none;
@@ -35,6 +35,9 @@ a {
     text-decoration: none;
 }
 /* Шапка */
+.header {
+    border: 1px solid #ECECEC;
+}
 .header .conteiner {
     display: flex;
     align-items: center;
@@ -62,7 +65,7 @@ a {
     color: var(--main-color, #212121);
     font-weight: 500;
     letter-spacing: 0.02em;
-}
+} 
 .nav-link:hover,
 .nav-link:focus {
     color: var(--accent, #2196f3)
@@ -93,7 +96,6 @@ a {
     color: var(--white, #ffffff)
 }
 .hero-title {
-    padding-top: 200px;    
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto; 
@@ -106,10 +108,11 @@ a {
     letter-spacing: 0.06em;
 }
 .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
 text-align: center;
 }
 .btn {
-    margin-bottom: 200px;
     border: 1px solid var(--accent);
     border-radius: 4px;
     cursor: pointer;
@@ -120,8 +123,7 @@ text-align: center;
     line-height: 1.875;
     font-weight: 700;
     letter-spacing: 0.06em;
-    
-}
+    }
 .btn:hover,
 .btn:focus {
     background-color: #188CE8;
@@ -212,6 +214,7 @@ font-style: normal;
     color: rgba(255, 255, 255, 0.6);
 }
 /* Портфоліо фільтри */
+
 .filter {
     padding: 6px 22px;
     font-family: inherit;
@@ -232,9 +235,16 @@ font-style: normal;
 .filters {
     display: flex;
     justify-content: center;
+    margin-bottom: 34px;
 }
 .filters > .item:not(:last-child) {
     margin-right: 8px;
+}
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex-basis: calc(100% / 3);
 }
 .list-title {
     font-size: 18px;
@@ -247,11 +257,11 @@ font-style: normal;
     line-height: 1.88;
     color: var(--second-color, #757575);
 }
-.portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: calc((100% - 30px) / 3);
+.item-text {
+    padding: 20px 24px;
+    background: #FFFFFF;
+    border-right: 1px solid #EEEEEE;
+border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
 }
-.portfolio > .item: {
 
-}
