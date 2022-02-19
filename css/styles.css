@@ -142,6 +142,7 @@ text-align: center;
 .title {
     font-size: 14px;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 .section-text {
     line-height: 1.71;
